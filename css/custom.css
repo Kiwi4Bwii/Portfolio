@@ -1,0 +1,174 @@
+html,
+body {
+  font-family: 'Kanit', sans-serif;
+  height: 100%;
+  background-image: linear-gradient(to left, #aed8ff, #94c6e9, #75a1c7, #94c6e9, #aed8ff);  
+  letter-spacing: 1px;
+  color: black;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+header h1 {
+  color: rgb(255, 255, 255);
+}
+.leads {
+  margin-left: 13px;
+  font-size: 20px;
+}
+.lead {
+  font-size: 22px;
+}
+p {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 18px;
+}
+.BGP {  
+  text-shadow: 1px 1px rgb(27, 27, 27);
+  font-weight: 600;
+}
+
+.nav-link{
+	text-decoration: none;
+	color: transparent;
+	font-size: 15px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	display: inline-block;
+	margin-bottom: 1px;
+	background: rgb(54, 54, 54);
+	  background-clip: border-box;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+  }
+  .navbar{
+	padding: 20px 5px 10px 5px;
+  }
+  .navbar .navbar-nav .nav-item{
+	position:relative;
+  }
+  .navbar .navbar-nav .nav-link{
+	padding: 1em 0;
+  }
+  .navbar .navbar-nav .nav-item{
+	margin: 0 1em 0;
+  }
+  .navbar .navbar-nav .nav-item::after{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+  margin: 0 auto;
+	content: "";
+	background-color:#000000;
+	width: 0%;
+	height: 1.5px;
+	transition:all .5s;
+  }
+  .navbar .navbar-nav .nav-item:hover:after{
+	width: 90%;
+  }
+  .navbar img {
+    margin-left: -15px;
+  }
+  
+footer {
+  flex-shrink: 0;
+}
+
+header {
+  background: no-repeat center center;
+  background-size: cover;
+  color: rgb(255, 255, 255);
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.color-overlay {
+  background-color: rgba(1, 26, 39, 0.4);
+  min-height: 60vh;
+}
+
+.web-design {
+  font-size: 6vw;
+  letter-spacing: 2px;
+  opacity: .5;
+}
+
+.singleCol {
+  max-width: 750px;
+}
+
+.cutie img {
+  
+    border-radius: 174px;
+    width: 300px;
+    border: 3px solid rgb(0, 0, 0);
+    position: relative;
+    overflow: hidden;
+    filter: grayscale(100%);
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.cutie img:hover {
+  transform: scale(1.01);
+  filter: grayscale(0%);
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  background-color: #656565;
+  color: rgb(255, 255, 255);
+  transform: scale(1.04);
+}
+
+.btn-outline-dark {
+  background-color: #2e2e2e;
+  color: rgb(255, 255, 255);
+}
+
+.btn-outline-dark:hover {
+ 
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+
+footer {
+  background: #3a3a3a;
+  color: wheat;
+  height: 10px;
+  margin-top: 100px;
+}
+
+footer a {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin-top: -10px;
+  position: relative;
+  overflow: hidden;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+footer a:hover {
+  color: #949494;
+}
+
+@media (max-width: 767.98px) {
+  .color-overlay {
+    min-height: 30vh;
+  }
+}
